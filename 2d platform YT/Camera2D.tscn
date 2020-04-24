@@ -1,0 +1,18 @@
+[gd_scene load_steps=2 format=2]
+
+[ext_resource path="res://Camera2D.gd" type="Script" id=1]
+
+[node name="Camera2D" type="Camera2D"]
+position = Vector2( 151, -94 )
+current = true
+zoom = Vector2( 2.5, 2.5 )
+limit_left = 0
+limit_top = -1450
+limit_right = 3290
+limit_bottom = 710
+limit_smoothed = true
+drag_margin_h_enabled = true
+smoothing_enabled = true
+smoothing_speed = 10.0
+script = ExtResource( 1 )
+target = NodePath("../player")
